@@ -1,0 +1,19 @@
+name: AtPlayer
+version: ${project.version}
+main: com.github.hank9999.atplayer.AtPlayer
+authors: [hank9999, xm2020]
+description: At Players in your Sever!
+
+commands:
+  atplayer:
+    aliases: [at]
+    description: AtPlayer Main Command
+
+permissions:
+  AtPlayer.use:
+    description: Player's basic perm in AtPlayer
+    default: op
+
+  AtPlayer.admin:
+    description: AtPlayer Admin
+    default: op
