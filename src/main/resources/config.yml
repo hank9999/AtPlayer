@@ -1,0 +1,39 @@
+atall: true
+atplayer: true
+bypass_cooldown: true
+cooldown: 10
+
+message:
+  at: '&bat you!'
+  atall: '&b at all player!'
+  have_atall: '&bYou have all player message'
+  have_at: '&bSomebody at you'
+  no_perm: '&cYou don not have permission to do this.'
+  cooldown: 'Please wait %s% seconds'
+
+sounds:
+  at:
+    ENTITY_PLAYER_LEVELUP:
+      volume: 1.0
+      pitch: 1.0
+  atall:
+    ENTITY_GENERIC_EXPLODE:
+      volume: 1.0
+      pitch: 1.0
+    ENTITY_PLAYER_LEVELUP:
+      volume: 1.0
+      pitch: 1.0
+
+command_message:
+  enable:
+    - '&6Notifications Enabled'
+  disable:
+    - '&6Notifications Disabled'
+  m_on:
+    - '&6AtPlayer Enabled'
+  m_off:
+    - '&6AtPlayer Disabled'
+  no_perm:
+    - '&cYou don not have permission to do this.'
+  not_exist:
+    - '&cThis command does not exist'
