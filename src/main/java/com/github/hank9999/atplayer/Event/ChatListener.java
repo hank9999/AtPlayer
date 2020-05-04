@@ -108,7 +108,7 @@ public class ChatListener implements Listener {
                 new BukkitRunnable() {
                     @Override
                     public void run() {
-                        player.sendMessage(ChatColor.AQUA + "[@] " + ChatColor.YELLOW + ">>> " + ChatColor.GREEN + player.getName() + " " +
+                        player.sendMessage(ChatColor.AQUA + "[@] " + ChatColor.YELLOW + ">>> " + ChatColor.GREEN + p.getName() + " " +
                                 ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(
                                         AtPlayer.ins.getConfig().getString("message.at")
                                 )));
