@@ -2,6 +2,8 @@ package com.github.hank9999.atplayer;
 
 import com.github.hank9999.atplayer.Commands.Main_Command;
 import com.github.hank9999.atplayer.Event.ChatListener;
+import com.github.hank9999.atplayer.Update.Timer_Update;
+import com.github.hank9999.atplayer.Update.Update_Checker;
 import com.github.hank9999.atplayer.bStats.MetricsLite;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -37,6 +39,7 @@ public final class AtPlayer extends JavaPlugin {
         Objects.requireNonNull(getServer().getPluginCommand("at")).setExecutor(new Main_Command());
         Objects.requireNonNull(getServer().getPluginCommand("at")).setTabCompleter(new Main_Command());
         getLogger().info(ChatColor.BLUE + "AtPlayer v" + getDescription().getVersion() + " Enabled");
+        new Timer_Update();
 
     }
 
