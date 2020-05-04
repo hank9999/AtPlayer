@@ -25,7 +25,7 @@ public class Timer_Update {
     }
 
     public void Update_Check() {
-        new Update_Checker(AtPlayer.ins, 78091).getVersion(version -> {
+        new Update_Checker(AtPlayer.ins).getVersion(version -> {
             if (("v" + AtPlayer.ins.getDescription().getVersion()).equalsIgnoreCase(version)) {
                 if (is_first) {
                     AtPlayer.ins.getLogger().info(ChatColor.AQUA + "No new update available.");

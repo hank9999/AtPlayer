@@ -14,7 +14,7 @@ public class Update_Checker {
 
     private Plugin plugin;
 
-    public Update_Checker(Plugin plugin, int resourceId) {
+    public Update_Checker(Plugin plugin) {
         this.plugin = plugin;
     }
 
