@@ -20,7 +20,7 @@ public class Update_Checker {
 
     public void getVersion(final Consumer<String> consumer) {
         Bukkit.getScheduler().runTaskAsynchronously(this.plugin, () -> {
-            try (InputStream inputStream = new URL("https://cdn.jsdelivr.net/gh/hank9999/AtPlayer/version").openStream(); Scanner scanner = new Scanner(inputStream)) {
+            try (InputStream inputStream = new URL("https://hank9999.github.io/AtPlayer/version").openStream(); Scanner scanner = new Scanner(inputStream)) {
                 if (scanner.hasNext()) {
                     consumer.accept(scanner.next());
                 }
