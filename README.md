@@ -4,6 +4,9 @@ A Minecraft Bukkit(Spigot) Plugin to at player in your server
 ![https://hank9999.github.io/AtPlayer/image/1.png](https://hank9999.github.io/AtPlayer/image/1.png)
 ![https://hank9999.github.io/AtPlayer/image/2.png](https://hank9999.github.io/AtPlayer/image/2.png)
 
+[English](#English)  
+[中文](#中文)
+
 ## English
 ### Usage
 Download latest releases to your server and reboot or plugman load
