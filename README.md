@@ -1,9 +1,9 @@
 # AtPlayer
 A Minecraft Bukkit(Spigot) Plugin to at player in your server  
 
-![https://hank9999.github.io/AtPlayer/image/1.png](https://hank9999.github.io/AtPlayer/image/1.png)
-![https://hank9999.github.io/AtPlayer/image/2.png](https://hank9999.github.io/AtPlayer/image/2.png)
 
+<img src="https://hank9999.github.io/AtPlayer/image/1.png" style="max-width:100%;">
+<img src="https://hank9999.github.io/AtPlayer/image/2.png" style="max-width:100%;">
 [English](#English)  
 [中文](#中文)
 
