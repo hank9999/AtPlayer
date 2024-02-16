@@ -72,19 +72,6 @@ public class ChatListener implements Listener {
             return;
         }
 
-        if (!(p.hasPermission("AtPlayer.use") || p.hasPermission("AtPlayer.admin"))) {
-            new BukkitRunnable() {
-                @Override
-                public void run() {
-                    p.sendMessage(ChatColor.AQUA + "[@] " + ChatColor.YELLOW + ">>> " +
-                            ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(
-                                    AtPlayer.ins.getConfig().getString("message.no_perm")
-                            )));
-                }
-            }.runTaskLaterAsynchronously(AtPlayer.ins, 1L);
-            return;
-        }
-
         List<String> mayAtList = new ArrayList<>();
 
         for (Player player : AtPlayer.ins.getServer().getOnlinePlayers()) {
@@ -97,6 +84,19 @@ public class ChatListener implements Listener {
         }
 
         if (mayAtList.isEmpty()) {
+            return;
+        }
+
+        if (!(p.hasPermission("AtPlayer.use") || p.hasPermission("AtPlayer.admin"))) {
+            new BukkitRunnable() {
+                @Override
+                public void run() {
+                    p.sendMessage(ChatColor.AQUA + "[@] " + ChatColor.YELLOW + ">>> " +
+                            ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(
+                                    AtPlayer.ins.getConfig().getString("message.no_perm")
+                            )));
+                }
+            }.runTaskLaterAsynchronously(AtPlayer.ins, 1L);
             return;
         }
 
