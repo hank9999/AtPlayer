@@ -34,6 +34,6 @@ command_message:
   m_off:
     - '&6AtPlayer Disabled'
   no_perm:
-    - '&cYou don not have permission to do this.'
+    - '&cYou do not have permission to do this.'
   not_exist:
     - '&cThis command does not exist'
