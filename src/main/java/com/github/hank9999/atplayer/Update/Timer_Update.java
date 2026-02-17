@@ -15,7 +15,7 @@ public class Timer_Update {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                if (!AtPlayer.ins.isEnabled()) { // Plugin was disabled
+                if (AtPlayer.ins == null || !AtPlayer.ins.isEnabled()) { // Plugin was disabled
                     timer.cancel();
                     return;
                 }

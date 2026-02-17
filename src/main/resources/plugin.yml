@@ -1,5 +1,5 @@
 name: AtPlayer
-version: ${project.version}
+version: ${version}
 main: com.github.hank9999.atplayer.AtPlayer
 authors: [hank9999, xm2020]
 description: At Players in your Sever!
